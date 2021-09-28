@@ -9,6 +9,12 @@ https://coolors.co/c2c7cb-101c4d-8c99a2-b7990d-2f2504
 #2F2504 - olive drab 7
 */
 
+html { 
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } 
 
 /* Global Styles */
 body{
@@ -80,6 +86,21 @@ header h1, header h2 {
 }
 .projects .btn:hover {
     background: rgba(16,28,77, 80%);
+}
+
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px dashed #2F2504;
+    padding: 25px 0;
+}
+
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3{
+    margin-top: 0; /* line up h3 with top of img floated to left*/
 }
 /* Work Experience */
 .workexperience{
