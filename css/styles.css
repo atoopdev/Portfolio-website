@@ -63,9 +63,11 @@ h1, h2{
 header{
     background: #101C4D;
     color: #C2C7CB;
+
 }
 header h1, header h2 {
     color: #B7990D;
+    text-align: center;
 }
 /* Projects */
 .projects{
@@ -112,4 +114,15 @@ header h1, header h2 {
 footer {
     background: #2F2504;
     color: #B7990D;
+    text-align: center;
+}
+.contact-list{
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.contact-list a{
+    padding: 15px;
+    display:  inline-block;
 }
