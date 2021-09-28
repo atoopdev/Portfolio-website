@@ -1,0 +1,94 @@
+/*  color palette
+https://coolors.co/c2c7cb-101c4d-8c99a2-b7990d-2f2504
+#C2C7CB - silver sand
+#101C4D - royal blue dark
+#0A1233 - oxford blue
+#8C99A2 - cadet grey
+#B7990D - lemon curry
+#E5BE10 - saffron
+#2F2504 - olive drab 7
+*/
+
+
+/* Global Styles */
+body{
+    color: #0A1233;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+img {
+    width: 300px;
+}
+a{
+    color: #B7990D;
+}
+a:hover{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    margin: 0; /* eliminates extra space at top pf each section */
+    font-size: 45px;
+}
+
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+
+}
+/* wraps each section in a container */
+.content_wrapper{
+  width: 800px; /* pulls text in to center of screen */
+  margin: 0 auto; /* centers content wrapper horizontally */
+  padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
+}
+/* Profile */
+header{
+    background: #101C4D;
+    color: #C2C7CB;
+}
+header h1, header h2 {
+    color: #B7990D;
+}
+/* Projects */
+.projects{
+    background: #8C99A2;
+}
+
+.projects a{
+ color: #0A1233;
+}
+
+.projects .btn{
+    color:#C2C7CB;
+    background:#101C4D;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block; /* required to place inside padding space*/
+}
+.projects .btn:hover {
+    background: rgba(16,28,77, 80%);
+}
+/* Work Experience */
+.workexperience{
+   background: #C2C7CB;
+}
+/* Education */
+
+/* Contact Info */
+footer {
+    background: #2F2504;
+    color: #B7990D;
+}
