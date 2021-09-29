@@ -59,6 +59,15 @@ h1, h2{
   margin: 0 auto; /* centers content wrapper horizontally */
   padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
 }
+/* applies to 1st child p after h3 */
+ h3 + p{
+    font-style: italic;
+ }
+/* all p after h3 */
+h3 ~ p{
+    margin: 0;
+}
+
 /* Profile */
 header{
     background: #101C4D;
