@@ -60,11 +60,16 @@ h1, h2{
   padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
 }
 /* applies to 1st child p after h3 */
- h3 + p{
+.item-details h3 + p {
     font-style: italic;
- }
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
 /* all p after h3 */
-h3 ~ p{
+.item-details h3 ~ p{
     margin: 0;
 }
 
