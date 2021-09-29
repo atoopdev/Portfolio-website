@@ -54,8 +54,10 @@ h1, h2{
 
 }
 /* wraps each section in a container */
+
 .content_wrapper{
-  width: 800px; /* pulls text in to center of screen */
+  max-width: 800px; 
+  width: 85%; /* applies when viewport < 800px*/
   margin: 0 auto; /* centers content wrapper horizontally */
   padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
 }
