@@ -104,10 +104,18 @@ header h1, header h2 {
 .project-item h3{
     margin-top: 0; /* line up h3 with top of img floated to left*/
 }
+
+
 /* Work Experience */
 .workexperience{
    background: #C2C7CB;
 }
+.job-item{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
 /* Education */
 
 /* Contact Info */
