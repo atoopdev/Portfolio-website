@@ -59,13 +59,14 @@ h1, h2{
   margin: 0 auto; /* centers content wrapper horizontally */
   padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
 }
-/* applies to 1st child p after h3 */
-.item-details h3 + p {
-    font-style: italic;
-}
 
 h3 {
     margin-bottom: 0;
+}
+
+/* applies to 1st child p after h3 */
+.item-details h3 + p {
+    font-style: italic;
 }
 
 /* all p after h3 */
