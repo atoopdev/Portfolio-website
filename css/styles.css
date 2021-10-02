@@ -89,6 +89,10 @@ header{
     color: #C2C7CB;
 
 }
+
+.header-item {
+overflow: hidden;
+}
 header h1, header h2 {
     color: #E5BE10;
 }
@@ -163,6 +167,12 @@ padding: 0;
     }
 
     /* only floats image to left at larger screen size, otherwise stacks */
+    .header-item img{
+        float:left;
+        margin-right: 20px;
+    }
+
+    /* only floats image to left at larger screen size, otherwise stacks */
     .project-item img{
         float: left;
         margin-right: 20px;
@@ -188,6 +198,7 @@ padding: 0;
     }
     h2{
        line-height: 1; 
+       margin-bottom:15px;
     }
     .contact-list a{
         padding: 5px;
