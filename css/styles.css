@@ -101,6 +101,9 @@ header h1, header h2 {
     background: #8C99A2;
 }
 
+.project-item img{
+    margin-bottom: 10px;
+}
 .projects a{
  color: #0A1233;
 }
@@ -129,8 +132,12 @@ header h1, header h2 {
 /* Work Experience */
 .workexperience{
    background: #C2C7CB;
+   overflow: hidden;
 }
 
+.job-details img{
+    margin-top: 10px;
+}
 
 /* Education */
 .education {
@@ -177,7 +184,19 @@ padding: 0;
         margin-right: 20px;
     }
 
+     /* only floats image to left at larger screen size, otherwise stacks */
+     .workexperience img{
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
     /* work experience swiches to 2 col grid */
+
+    .job-details img{
+        margin-left: -3px;
+        margin-right: 3px;
+    }
     .job-item{
         display:grid;
         grid-template-columns: 1fr 2fr;
