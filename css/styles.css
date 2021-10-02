@@ -32,7 +32,7 @@ img {
     width: 300px;
 }
 a{
-    color: #B7990D;
+    color: #E5BE10;
 }
 a:hover{
     text-decoration: none;
@@ -134,10 +134,7 @@ header h1, header h2 {
 
 /* Education */
 .education {
-    background-image: url(../images/joanna-kosinska-unsplash.jpg);
-    background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
+   background-color:#E5BE10;
 }
 
 .education p{
@@ -153,7 +150,9 @@ footer {
 list-style-type: none;
 padding: 0;
 }
+
 .contact-list a{
+    color:#E5BE10;
     padding: 15px;
     display:  inline-block;
 }
@@ -183,6 +182,12 @@ padding: 0;
         display:grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
+    }
+    .education {
+        background-image: url(../images/joanna-kosinska-unsplash.jpg);
+        background-size: cover;
+        background-position: top right;
+        padding-bottom: 100px;
     }
     .contact-list{
         display: flex;
