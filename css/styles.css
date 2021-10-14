@@ -53,6 +53,30 @@ h1, h2{
     margin: 0;
 
 }
+
+/* nav bar */
+
+
+.nav-bar{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    background: #101C4D;
+    /* color: #E5BE10; */
+    height: 2.75rem;
+    /* border: solid 1px green; */
+}
+
+.projects-link{
+    background-color: #E5BE10;
+    color: #101C4D;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+
+
 /* wraps each section in a container */
 
 .content_wrapper{
