@@ -57,16 +57,75 @@ h1, h2{
 /* nav bar */
 
 
-.nav-bar{
+/* .nav-bar{
+    padding-top: 50px;
     display: flex;
-    justify-content:right;
+    justify-content:center;
     align-items: center;
     background: #101C4D;
-    /* color: #E5BE10; */
     height: 2.75rem;
-    /* border: solid 1px green; */
+    border: solid 1px green;
+} */
+
+/* .nav-center{ 
+    width: 90vw;
+    border: solid 1px red;
+}
+.nav-header{
+    display: flex;
+    font-family: 'Caveat', cursive;
+    color:#E5BE10;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: left;
+    border: solid 1px purple;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.nav-btn{
+    cursor: pointer;
+    color: #E5BE10;
+    background: #101C4D;
+    border: transparent;
+    border-radius: 0.25rem;
+    padding: 0.15rem 0.75rem;
+    display: inline-block;
+}
+
+.nav-btn i{
+    font-size: 1.25rem;
+}
+
+.nav-btn:hover{
+    background:#E5BE10;
+    color: #101C4D;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out all;
+}
+
+.show-links{
+    height: 300px;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    color:#E5BE10;
+    letter-spacing: ;
+    padding: 1rem 0;
+    border-top: 1px solid #E5BE10;
+    transition: 0.3s ease-in-out all;
+} */
+
+
+/*
 .projects-link{
     background-color: #E5BE10;
     color: #101C4D;
@@ -74,7 +133,7 @@ h1, h2{
     border-radius: 8px;
     margin-right: 5px;
 }
-
+*/
 
 
 /* wraps each section in a container */
@@ -83,7 +142,7 @@ h1, h2{
   max-width: 800px; 
   width: 85%; /* applies when viewport < 800px*/
   margin: 0 auto; /* centers content wrapper horizontally */
-  padding: 60px 0;  /* pushes content in on top and bottom to eliminate gaps between sections */
+  padding: 60px 0;  /* 60px prev value pushes content in on top and bottom to eliminate gaps between sections */
 }
 
 h3 {
