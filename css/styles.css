@@ -56,73 +56,80 @@ h1, h2{
 
 /* nav bar */
 
+header{
+    border: 1px solid red;
+}
 
-/* .nav-bar{
-    padding-top: 50px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+/* is block level element and will stretch length of page */
+nav{
+    border: 5px solid blue;
     background: #101C4D;
-    height: 2.75rem;
-    border: solid 1px green;
-} */
-
-/* .nav-center{ 
-    width: 90vw;
-    border: solid 1px red;
-}
-.nav-header{
-    display: flex;
-    font-family: 'Caveat', cursive;
-    color:#E5BE10;
-    font-size: 2rem;
-    text-decoration: none;
-    text-align: left;
-    border: solid 1px purple;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.nav-btn{
-    cursor: pointer;
+
+/* flex container */
+nav ul{
+    border: 2px solid black;
+     /* remove default bullets */
+     list-style-type: none;
+     /* remove spacing around */
+     margin: 0;
+     padding: 0;
+     display: flex;
+     /* may want to go back and align left */
+     justify-content: space-evenly;
+     align-items: center;
+  }
+
+  .name-logo{
     color: #E5BE10;
-    background: #101C4D;
-    border: transparent;
-    border-radius: 0.25rem;
-    padding: 0.15rem 0.75rem;
-    display: inline-block;
-}
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    flex-basis: 25vw;
+    border: 2px solid white;
+    text-align: left;
+  }
+  nav li{
+    border: 2px dotted green;
+    /* gets links of edges of page   */
+    /* padding: 0.5rem 1rem; */
+  }
 
-.nav-btn i{
-    font-size: 1.25rem;
-}
-
-.nav-btn:hover{
-    background:#E5BE10;
-    color: #101C4D;
-}
-
-.nav-links{
-    display:flex;
-    flex-direction: column;
-    height: 0;
-    overflow: hidden;
-    transition: 0.3s ease-in-out all;
-}
-
-.show-links{
-    height: 300px;
-}
-
-.nav-link{
-    display: block;
-    text-align: center;
+  /* clickable area only as big as words by default */
+  nav a{
     color:#E5BE10;
-    letter-spacing: ;
-    padding: 1rem 0;
-    border-top: 1px solid #E5BE10;
-    transition: 0.3s ease-in-out all;
-} */
+    background: #101C4D;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* bigger clickable area */
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+/* mouse hover no click */
+  nav a:hover{
+      color: #101C4D;
+      background: #E5BE10;
+  }
+  /* runs color across */
+  .nav-link nav li:hover{
+    background: #E5BE10; 
+  }
+
+/* Five possible link states, in order:
+:link -- before you've visited the site
+:visited -- you've viewed the site before
+:focus -- when the element is selected
+:hover -- when you hover over it
+:active -- after the link is clicked, before the next page loads
+
+Remember with the acronym
+Lord Vader Former Handle Anakin
+or
+LiVe Free HAppy 
+*/
 
 
 /*
@@ -245,6 +252,7 @@ padding: 0;
     color:#E5BE10;
     padding: 15px;
     display:  inline-block;
+    text-decoration: none;
 }
 
 /* Responsive styles */
