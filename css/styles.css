@@ -76,8 +76,8 @@ nav ul{
      margin: 0;
      padding: 0;
      display: flex;
-     /* may want to go back and align left */
-     justify-content: space-evenly;
+     /* send everything right */
+     justify-content: flex-end;
      align-items: center;
   }
 
@@ -87,8 +87,10 @@ nav ul{
     font-weight: 600;
     font-size: 2.5rem;
     padding: 0.5rem 1rem;
-    flex-basis: 25vw;
+    /* flex-basis: 25vw; */
     border: 2px solid white;
+    /* use to shove left */
+    margin-right: auto;
     text-align: left;
   }
   nav li{
