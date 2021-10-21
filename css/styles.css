@@ -200,16 +200,6 @@ LiVe Free HAppy
   }
 }
 
-/*
-.projects-link{
-    background-color: #E5BE10;
-    color: #101C4D;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    margin-right: 5px;
-}
-*/
-
 
 /* wraps each section in a container */
 
@@ -325,6 +315,22 @@ padding: 0;
 
 /* Responsive styles */
 
+@media screen and (min-width:1682px){
+    /* add a background image */
+    /* used https://codepen.io/yaphi1/pen/oNbEqGV?editors=0010 to experiment with optimal opacity */
+    .workexperience{
+        background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, .47), rgba(255, 255, 255, .9)), url('../images/leone-venter-VieM9BdZKFo-unsplash.jpg');
+        background-size: cover;
+        background-position: top right;
+        padding-bottom: 100px;
+    }
+
+    .work-experience-img{
+        display: none;
+    }
+}
+
 @media screen and (min-width:750px){
 
     /* text centers header and footer */
@@ -342,6 +348,19 @@ padding: 0;
     .project-item img{
         float: left;
         margin-right: 20px;
+    }
+
+    /* add a background image */
+    .workexperience{
+        background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .96)), url('../images/leone-venter-VieM9BdZKFo-unsplash.jpg');
+        background-size: cover;
+        background-position: top right;
+        padding-bottom: 100px;
+    }
+
+    .work-experience-img{
+        display: none;
     }
 
      /* only floats image to left at larger screen size, otherwise stacks */
