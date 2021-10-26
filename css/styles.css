@@ -43,7 +43,7 @@ h1{
     line-height: 1;
 }
 h2{
-    margin: 0; /* eliminates extra space at top pf each section */
+    margin: 0; /* eliminates extra space at top of each section */
     font-size: 45px;
 }
 
@@ -414,4 +414,86 @@ padding: 0;
     .content_wrapper h2{
         font-size: 40px;
     }
+}
+
+/* Project page */
+
+.project-page-header{
+    margin-bottom: 30px;
+}
+
+/* hold projects on project page */
+
+/* mobile styles first */
+.projects-container{
+    /* overflowing at .85vw at 320px screens; */
+    width: 97vw;
+    margin: 0 auto;
+    border: 2px solid red;
+    
+}
+
+.projects-list{
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    border: 2px solid green;
+}
+
+.project-page-item{
+    border: 2px solid yellow;
+    display: block;
+}
+
+
+/* min-width 654px */
+@media screen and (min-width:654px){
+    .projects-container{
+        width: 85%vw;
+    }
+    .projects-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-hero{
+        width: 400px;
+    }
+}
+
+
+/* min-width 1084px */
+@media screen and (min-width:900px){
+    .projects-container{
+        width: 80vw;
+    }
+    .projects-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-hero{
+        width: 500px;
+    }
+}
+
+/* min-width 1191px */
+@media screen and (min-width:1191px){
+    .projects-container{
+        width: 80vw;
+    }
+    .projects-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .project-hero{
+        width: 500px;
+    }
+}
+
+/* min-width 1595px */
+@media screen and (min-width:1595px){
+    .projects-container{
+        width: 80vw;
+    }
+    .projects-list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .project-hero{
+        width: 500px;
 }
