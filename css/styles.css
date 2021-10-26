@@ -416,7 +416,14 @@ padding: 0;
     }
 }
 
-/* Project page */
+/***************************** Project page *********************************************/
+
+.project-wrapper{
+    max-width: 1200px; 
+    width: 85%; /* applies when viewport < 800px*/
+    margin: 0 auto; /* centers content wrapper horizontally */
+    padding: 60px 0;  /* 60px prev value pushes content in on top and bottom to eliminate gaps between sections */
+}
 
 .project-page-header{
     margin-bottom: 30px;
@@ -428,28 +435,35 @@ padding: 0;
 .projects-container{
     /* overflowing at .85vw at 320px screens; */
     width: 97vw;
+    max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 
 .projects-list{
     display: grid;
-    gap: 2rem 1rem;
+    gap: 2rem 2rem;
     padding-bottom: 3rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .project-page-item{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: block;
 }
 
+/* min-width 375px */
+@media screen and (min-width:375px){
+    .projects-container{
+        width: 80%vw;
+    }
+}
 
 /* min-width 654px */
 @media screen and (min-width:654px){
     .projects-container{
-        width: 85%vw;
+        width: 80%vw;
     }
     .projects-list{
         grid-template-columns: 1fr 1fr;
@@ -460,14 +474,14 @@ padding: 0;
 }
 
 
-/* min-width 1084px */
+/* min-width 900px */
 @media screen and (min-width:900px){
-    .projects-container{
+    /* .projects-container{
         width: 80vw;
     }
     .projects-list{
         grid-template-columns: 1fr 1fr;
-    }
+    } */
     .project-hero{
         width: 500px;
     }
@@ -481,9 +495,9 @@ padding: 0;
     .projects-list{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .project-hero{
+    /* .project-hero{
         width: 500px;
-    }
+    } */
 }
 
 /* min-width 1595px */
@@ -493,7 +507,8 @@ padding: 0;
     }
     .projects-list{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* gap: 2rem 2rem; */
     }
     .project-hero{
-        width: 500px;
+        width: 600px;
 }
