@@ -429,6 +429,12 @@ padding: 0;
     margin-bottom: 30px;
 }
 
+.project-page-category{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
 /* hold projects on project page */
 
 /* mobile styles first */
