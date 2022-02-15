@@ -251,6 +251,8 @@ header h1, header h2 {
 
 .project-item img{
     margin-bottom: 10px;
+    height: 250px;
+    object-fit:cover;
 }
 .projects a{
  color: #0A1233;
@@ -457,6 +459,11 @@ padding: 0;
 .project-page-item{
     /* border: 2px solid yellow; */
     display: block;
+}
+
+.project-img{
+    height: 250px;
+    object-fit:cover;
 }
 
 /* min-width 375px */
