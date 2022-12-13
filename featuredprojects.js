@@ -179,7 +179,7 @@ function renderProjects(){
     featuredProjectsContainer.innerHTML = `<h2>Featured Projects</h2>
     <p>View selected projects below. Complete list of projects can be found at <a href="projects.html">amandatoop.com/projects.html</a>.</p>
 
-    <!-- Webdev Projects --> + ${projectHTML}`
+    <!-- Webdev Projects -->  ${projectHTML}`
 }
 
 function ProjectCardHTML(obj){
