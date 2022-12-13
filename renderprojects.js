@@ -177,7 +177,9 @@ function renderAllProjects(){
         }
     })
     console.log(allprojectHTML)
-    allProjectsContainer.innerHTML = `<div class="projects-list">
+    allProjectsContainer.innerHTML = `<h2 class="project-page-category">Projects</h2>
+    <div class="projects-list">
+    
     ${allprojectHTML}
     `
 }
