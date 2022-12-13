@@ -168,11 +168,12 @@ const projectData = [
 
 const featuredProjectsContainer = document.getElementById("featured-projects")
 
-function renderProjects(){
+
+function renderFeaturedProjects(){
     let projectHTML = ""
     projectData.map((project)=>{
         if(project.isFeatured===true){
-        projectHTML+=ProjectCardHTML(project)
+        projectHTML+=FeaturedProjectCardHTML(project)
         }
     })
     console.log(projectHTML)
@@ -182,7 +183,9 @@ function renderProjects(){
     <!-- Webdev Projects -->  ${projectHTML}`
 }
 
-function ProjectCardHTML(obj){
+
+
+function FeaturedProjectCardHTML(obj){
     return `
     <section class ="project-item">
             <a href=${obj.link}><img class="project-img" src=${obj.img} alt=${obj.title}></a>
@@ -195,4 +198,4 @@ function ProjectCardHTML(obj){
 
 }
 
-renderProjects()
+renderFeaturedProjects()

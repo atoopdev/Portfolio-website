@@ -1,4 +1,4 @@
-export default[
+const projectData = [
     {
         id: 14,
         title: "Travel Journal",
@@ -52,7 +52,7 @@ export default[
         img: "/images/rpg.jpg",
         link: "/projects/scrimba/rpg/index.html",
         blogLink: null,
-        isFeatured: true,
+        isFeatured: false,
         visible: true,
         keywords: "CSS, JavaScript", 
     }
@@ -64,7 +64,7 @@ export default[
         img:"/images/bbq-website.jpg",
         link: "/projects/scrimba/bbq/bbq.html",
         blogLink: null,
-        isFeatured: true,
+        isFeatured: false,
         visible: true,
         keywords: "CSS, JavaScript",
     }
@@ -165,3 +165,46 @@ export default[
         keywords:"CSS", 
     }
 ]
+
+const allProjectsContainer = document.getElementById("all-projects-container")
+
+function renderAllProjects(){
+    console.log("In render all projects")
+    let allprojectHTML = ""
+    projectData.map((project)=>{
+        if(project.visible===true){
+            allprojectHTML+=AllProjectCardHTML(project)
+        }
+    })
+    console.log(allprojectHTML)
+    allProjectsContainer.innerHTML = `<div class="projects-list">
+    ${allprojectHTML}
+    `
+}
+
+function AllProjectCardHTML(obj){
+    console.log("In all project html")
+    return `<!-- start item -->
+    <section class ="project-page-item">
+      <a href=${obj.link}><img class="project-img" src=${obj.img} alt=${obj.title}></a>
+
+      <h3>${obj.title}</h3>
+
+      <p>${obj.description}</p>
+        
+      <!--
+      <p>Read more about my experience <a href="https://dev.to/atoopdev/coding-up-a-react-travel-journal-3l3h">on my blog</a>.</p>
+      -->
+      
+       
+
+      <a class="btn" href=${obj.link} target="_blank">View project</a>
+      </section>
+      <!-- end -->
+
+
+    
+    `
+}
+
+renderAllProjects()
