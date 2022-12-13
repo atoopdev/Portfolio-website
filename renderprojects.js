@@ -191,6 +191,7 @@ function AllProjectCardHTML(obj){
       <h3>${obj.title}</h3>
 
       <p>${obj.description}</p>
+      <p class="project-keywords">Keywords: ${obj.keywords}</p>
         
       <!--
       <p>Read more about my experience <a href="https://dev.to/atoopdev/coding-up-a-react-travel-journal-3l3h">on my blog</a>.</p>
