@@ -166,33 +166,46 @@ const projectData = [
     }
 ]
 
-const featuredProjectsContainer = document.getElementById("featured-projects")
+const allProjectsContainer = document.getElementById("all-projects-container")
 
-function renderProjects(){
-    let projectHTML = ""
+function renderAllProjects(){
+    console.log("In render all projects")
+    let allprojectHTML = ""
     projectData.map((project)=>{
-        if(project.isFeatured===true){
-        projectHTML+=ProjectCardHTML(project)
+        if(project.visible===true){
+            allprojectHTML+=AllProjectCardHTML(project)
         }
     })
-    console.log(projectHTML)
-    featuredProjectsContainer.innerHTML = `<h2>Featured Projects</h2>
-    <p>View selected projects below. Complete list of projects can be found at <a href="projects.html">amandatoop.com/projects.html</a>.</p>
-
-    <!-- Webdev Projects --> + ${projectHTML}`
+    console.log(allprojectHTML)
+    allProjectsContainer.innerHTML = `<div class="projects-list">
+    ${allprojectHTML}
+    `
 }
 
-function ProjectCardHTML(obj){
-    return `
-    <section class ="project-item">
-            <a href=${obj.link}><img class="project-img" src=${obj.img} alt=${obj.title}></a>
-            <h3>${obj.title}</h3>
-                      <p>${obj.description}</p>
-            
-            <a class="btn" href=${obj.link} target="_blank">View project</a>
-            </section>
-            `
+function AllProjectCardHTML(obj){
+    console.log("In all project html")
+    return `<!-- start item -->
+    <section class ="project-page-item">
+      <a href=${obj.link}><img class="project-img" src=${obj.img} alt=${obj.title}></a>
 
+      <h3>${obj.title}</h3>
+
+      <p>${obj.description}</p>
+      <p class="project-keywords">Keywords: ${obj.keywords}</p>
+        
+      <!--
+      <p>Read more about my experience <a href="https://dev.to/atoopdev/coding-up-a-react-travel-journal-3l3h">on my blog</a>.</p>
+      -->
+      
+       
+
+      <a class="btn" href=${obj.link} target="_blank">View project</a>
+      </section>
+      <!-- end -->
+
+
+    
+    `
 }
 
-renderProjects()
+renderAllProjects()

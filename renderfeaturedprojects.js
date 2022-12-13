@@ -1,4 +1,4 @@
-export default[
+const projectData = [
     {
         id: 14,
         title: "Travel Journal",
@@ -52,7 +52,7 @@ export default[
         img: "/images/rpg.jpg",
         link: "/projects/scrimba/rpg/index.html",
         blogLink: null,
-        isFeatured: true,
+        isFeatured: false,
         visible: true,
         keywords: "CSS, JavaScript", 
     }
@@ -64,7 +64,7 @@ export default[
         img:"/images/bbq-website.jpg",
         link: "/projects/scrimba/bbq/bbq.html",
         blogLink: null,
-        isFeatured: true,
+        isFeatured: false,
         visible: true,
         keywords: "CSS, JavaScript",
     }
@@ -165,3 +165,37 @@ export default[
         keywords:"CSS", 
     }
 ]
+
+const featuredProjectsContainer = document.getElementById("featured-projects")
+
+
+function renderFeaturedProjects(){
+    let projectHTML = ""
+    projectData.map((project)=>{
+        if(project.isFeatured===true){
+        projectHTML+=FeaturedProjectCardHTML(project)
+        }
+    })
+    console.log(projectHTML)
+    featuredProjectsContainer.innerHTML = `<h2>Featured Projects</h2>
+    <p>View selected projects below. Complete list of projects can be found at <a href="projects.html">amandatoop.com/projects.html</a>.</p>
+
+    <!-- Webdev Projects -->  ${projectHTML}`
+}
+
+
+
+function FeaturedProjectCardHTML(obj){
+    return `
+    <section class ="project-item">
+            <a href=${obj.link}><img class="project-img" src=${obj.img} alt=${obj.title}></a>
+            <h3>${obj.title}</h3>
+                      <p>${obj.description}</p>
+            
+            <a class="btn" href=${obj.link} target="_blank">View project</a>
+            </section>
+            `
+
+}
+
+renderFeaturedProjects()
