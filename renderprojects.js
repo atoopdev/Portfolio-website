@@ -73,7 +73,7 @@ const projectData = [
         id: 8,
         title: "Image Carousel",
         description: "Here is a skratch coded image carosel. The goal of this project was to interate forward and back through an array of images, showing only a single desired image at time.",
-        img:"/images/carousel1.jpg",
+        img:"/images/imgcarousel.jpg",
         link: "/projects/scrimba/javascript-challenges/carousel.html",
         blogLink: null,
         isFeatured: false,
