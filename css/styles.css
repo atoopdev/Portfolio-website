@@ -285,6 +285,10 @@ header h1, header h2 {
    overflow: hidden;
 }
 
+.workexperience li{
+    margin-bottom: .75em;
+}
+
 .job-details img{
     margin-top: 10px;
 }
